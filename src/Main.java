@@ -62,9 +62,10 @@ public class Main {
         Распечатайте результат преобразования в консоль.
          */
         for (int i = 0; i < massiv1.length; i++) {
-            if (massiv1[i] % 2 == 0) {
-                System.out.println(massiv1[i]);
+            if (massiv1[i] % 2 != 0) {
+                massiv1[i] ++;
             }
         }
+        System.out.println(Arrays.toString(massiv1));
     }
 }
